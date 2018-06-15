@@ -1,2 +1,2 @@
 # simpleprograms
-Here we have solutions to simple programming questions available on the Internet
+Here we have solution to simple programming question "Finding the percentage " (python)
