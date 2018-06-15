@@ -1,0 +1,11 @@
+from collections import Counter
+nShoes=int(input())
+shoeList=Counter(map(int, input().split()))
+custmrSize=int(input())
+income=0
+for i in range(custmrSize):
+    size, price = map(int, input().split())
+    if shoeList[size]:
+        income += price
+        shoeList[custmrSize] -= 1
+print(income)
