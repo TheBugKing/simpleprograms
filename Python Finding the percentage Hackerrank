@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = []
+    students = []
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks = scores
+        student_details = {'name': name, 'marks': student_marks}
+        students.append(student_details)
+    query_name = input()
+    for i in students:
+        if(i['name'] == query_name):
+            phy = i['marks'][0:1]
+            math = i['marks'][1:2]
+            chem = i['marks'][2:]
+            avg = float((phy[0] + math[0] + chem[0]) / 3)
+            print('{:.2f}'.format(avg))
